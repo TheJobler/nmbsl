@@ -1,0 +1,16 @@
+@keyframes nav-show{
+    0%{visibility:hidden}
+    100%{visibility:visible;}
+}
+@-o-keyframes nav-show{
+	0%{visibility:hidden}
+    100%{visibility:visible;}
+}
+@-moz-keyframes nav-show{
+	0%{visibility:hidden}
+    100%{visibility:visible;}
+}
+@-webkit-keyframes nav-show{
+	0%{visibility:hidden}
+    100%{visibility:visible;}
+}

@@ -1,0 +1,8 @@
+@font-face{
+	font-family: 'DejaVuSans-light';
+	src: url('fonts/DejaVuSans-ExtraLight.ttf'),format('truetype');
+}
+
+#navbar-items>li>a, #survey-items>li>ul>li>a, #shop-items>li>ul>li>a{
+	font-family:DejaVuSans-light, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}

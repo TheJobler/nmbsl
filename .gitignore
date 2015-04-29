@@ -1,0 +1,6 @@
+*.jpg
+*.png
+*.swp
+tests/
+tests.*
+*.ttf

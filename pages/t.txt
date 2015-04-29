@@ -1,0 +1,37 @@
+				<div id = "surveys">
+					<div class = "left-nav" onclick = "javascript:util_scroll('#surveys','left', false)"></div>
+					<?php
+						if(!empty($_GET['s'])){
+							$pages = scandir($page_directory.'/'.$surveys,0);
+							unset($pages[0],$pages[1]);
+							$s = $_GET['s'];
+							if(in_array($s.'.survey.'.$extensions[0],$pages)){
+								include($page_directory.'/'.$surveys.'/'.$s.'.survey.'.$extensions[0]);
+							}
+							else include($page_directory.'/'.'forbidden'.'.inc.'.$extensions[0]);
+						}
+						else{
+							include($page_directory.'/survey-home.inc.'.$extensions[0]);
+						}
+					?>
+					<div class = "right-nav" onclick = "javascript:util_scroll('#surveys','right', false)"></div>
+				</div>
+				
+				<div id = "shop">
+					<div class = "left-nav" onclick = "javascript:util_scroll('#shop','left', false)"></div>
+					<?php
+						if(!empty($_GET['i'])){
+							$pages = scandir($page_directory.'/'.$surveys,0);
+							unset($pages[0],$pages[1]);
+							$i = $_GET['i'];
+							if(in_array($i.'.shop.'.$extensions[0],$pages)){
+								include($page_directory.'/'.$surveys.'/'.$i.'.shop.'.$extensions[0]);
+							}
+							else include($page_directory.'/'.'forbidden'.'.inc.'.$extensions[0]);
+						}
+						else{
+							include($page_directory.'/shop-home.inc.'.$extensions[0]);
+						}
+					?>
+					<div class = "right-nav" onclick = "javascript:util_scroll('#shop','right', false)"></div>
+				</div>
